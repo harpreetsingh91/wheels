@@ -6,6 +6,7 @@ import heapq
 import random
 import copy
 import os
+import googlemaps
 
 ###### server shit down here
 @bottle.route('/static/<path:path>')
@@ -38,7 +39,7 @@ def test2():
     returnedData['lng'] = data["test2"]
     return returnedData
 
-'''gmaps = googlemaps.Client(key = 'AIzaSyDEtK4FuvEMBByZ5c5EQCQ1UF3weG0ysM8')'''
+gmaps = googlemaps.Client(key = 'AIzaSyDEtK4FuvEMBByZ5c5EQCQ1UF3weG0ysM8')
 
 '''@bottle.post('/testmap')
 def testMap():
