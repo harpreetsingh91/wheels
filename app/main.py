@@ -41,7 +41,7 @@ def test2():
 
 gmaps = googlemaps.Client(key = 'AIzaSyDEtK4FuvEMBByZ5c5EQCQ1UF3weG0ysM8')
 
-@bottle.post('/testmap')
+@bottle.get('/testmap')
 def testMap():
     directions_result = gmaps.directions("Sydney Town Hall",
     "Parramatta, NSW",
