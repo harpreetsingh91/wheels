@@ -46,7 +46,7 @@ def testMap():
     directions_result = gmaps.directions("Sydney Town Hall",
     "Parramatta, NSW",
     mode = "transit")
-    return directions_result
+    return type(directions_result)
 
 
 
