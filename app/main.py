@@ -43,7 +43,7 @@ gmaps = googlemaps.Client(key = 'AIzaSyDEtK4FuvEMBByZ5c5EQCQ1UF3weG0ysM8')
 
 @bottle.get('/testmap')
 def testMap():
-    directions_result = gmaps.directions("Sydney Town Hall", "Parramatta, NSW", mode = "transit")
+    directions_result = gmaps.directions("UVic Bus Loop, Victoria, BC V8P 5C2", "2230 Edgelow St, Victoria, BC V8N 1R5", mode = "transit")
     return directions_result[0]
 
 
