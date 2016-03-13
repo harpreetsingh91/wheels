@@ -44,7 +44,7 @@ gmaps = googlemaps.Client(key = 'AIzaSyDEtK4FuvEMBByZ5c5EQCQ1UF3weG0ysM8')
 @bottle.get('/testmap')
 def testMap():
     #response.content_type = 'application/json'
-    directions_result = gmaps.directions("UVic Bus Loop, Victoria, BC V8P 5C2", "2230 Edgelow St, Victoria, BC V8N 1R5", mode = "transit", alternatives = 'true')
+    directions_result = gmaps.directions("1401 Douglas St, Victoria, BC V8W, Canada", "1150 Douglas St, Victoria, BC V8W 3M9, Canada", mode = "transit"''', alternatives = 'true'''')
     return {'response': [directions_result]}
 
 
