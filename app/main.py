@@ -13,7 +13,8 @@ import googlemaps
 def static(path):
     return bottle.static_file(path, root='static/')
 
-
+# added comment
+	
 # code to give link for pictures and shit
 @bottle.get('/')
 def index():
