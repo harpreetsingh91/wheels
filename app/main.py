@@ -13,17 +13,6 @@ import googlemaps
 def static(path):
     return bottle.static_file(path, root='static/')
 
-# added comment
-	
-# code to give link for pictures and shit
-@bottle.get('/')
-def index():
-    head_url = '%s://%s/static/head.jpg' \
-        % (bottle.request.urlparts.scheme,
-           bottle.request.urlparts.netloc)
-
-    return {'color': '#00ff00', 'head': head_url}
-
 
 @bottle.get('/test1')
 def test1():
